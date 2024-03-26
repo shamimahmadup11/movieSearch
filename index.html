@@ -3,33 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Movie Search Project</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
 </head>
-<body>
-     <div class="container">
-        <div class="searchOptions">
-            <input type="text" id="inputText">
-            <button id="btn">search</button>
-        </div>
-     </div>
+<body class="bg-black w-full h-[100vh] flex flex-col items-center">
+    <h1 style="text-shadow: rgb(137, 137, 153) 2px 3px 0px;" class="font-bold text-6xl text-white">Movie Search</h1>
+    <span class="flex gap-2 mt-5">
+        <input type="text" id="searchBox" class="px-4 border-[1px] border-white rounded-lg h-[40px] w-[450px] outline-none focus:border-black focus:border-[1px]" placeholder="Search Movie">
+    </span>
+    <div id="searchResult" class="w-[100%] flex flex-wrap justify-center px-8 py-10 gap-4">
 
-     <div class="cards">
-        <div class="card">
-            <img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg" alt="" height="200px" width="200px">
-        </div>
-        <div class="title">
-            <h1>Guardians of the Galaxy Vol. 2</h1>
-            <p>2017"</p>
-            <p>  realeased on 05 May 2017"</p>
-            <p>Language English</p>
-        </div>
-        <div class="rating">
-           5.9
-        </div>
-     </div>
-
-
-    <script src="script.js"></script>
+    </div>
 </body>
 </html>
